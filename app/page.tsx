@@ -1,6 +1,7 @@
 import { Achievements } from './_components/Achievements'
 import { FAQ } from './_components/FAQ'
 import { Features } from './_components/Features'
+import { Footer } from './_components/Footer'
 import { GetStarted } from './_components/GetStarted'
 import { Header } from './_components/Header'
 import { Hero } from './_components/Hero'
@@ -21,6 +22,8 @@ export default function LandingPage() {
         <FAQ />
         <GetStarted />
       </main>
+
+      <Footer />
     </div>
   )
 }
