@@ -140,6 +140,12 @@
   }
 }
 
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
 /* Firefox */
 * {
   scrollbar-color: var(--neutral300) transparent;

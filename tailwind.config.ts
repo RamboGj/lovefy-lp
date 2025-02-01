@@ -1,13 +1,17 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient':
+          'linear-gradient(90deg, #FFF 50%, rgba(255, 255, 255, 0.00) 100%)',
+      },
       fontFamily: {
         Satoshi: ['Satoshi', 'sans-serif'],
         SatoshiMedium: ['Satoshi-Medium', 'sans-serif'],
@@ -62,7 +66,16 @@ export default {
         alphaBlack08: 'var(--alphaBlack08)',
         alphaBlack04: 'var(--alphaBlack04)',
       },
+      keyframes: {
+        'marquee-rtl': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        'marquee-rtl': 'marquee-rtl 13s linear infinite',
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config
