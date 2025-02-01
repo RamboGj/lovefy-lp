@@ -55,10 +55,10 @@ export function Header() {
   }
 
   return (
-    <header className="max-w-[1440px] inset-x-0 mx-auto fixed py-8 px-16 bg-neutral100 flex items-center justify-between z-20">
+    <header className="max-w-[1440px] inset-x-0 mx-auto fixed py-8 px-16 bg-neutral100 flex items-center justify-between z-30">
       <LogoLong />
 
-      <nav className="flex">
+      <nav className="hidden lg:flex">
         <ul className="flex gap-x-2 p-2">
           {navLinks.map(({ href, label }) => {
             const active = href === currentHash

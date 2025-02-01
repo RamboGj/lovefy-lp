@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.2",
     "@rocketseat/eslint-config": "^2.2.2",
     "next": "15.1.6",
     "react": "^19.0.0",

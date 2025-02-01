@@ -1,4 +1,7 @@
+import { Achievements } from './_components/Achievements'
+import { FAQ } from './_components/FAQ'
 import { Features } from './_components/Features'
+import { GetStarted } from './_components/GetStarted'
 import { Header } from './_components/Header'
 import { Hero } from './_components/Hero'
 import { Plans } from './_components/Plans'
@@ -14,6 +17,9 @@ export default function LandingPage() {
         <Features />
         <Plans />
         <Testimonials />
+        <Achievements />
+        <FAQ />
+        <GetStarted />
       </main>
     </div>
   )
