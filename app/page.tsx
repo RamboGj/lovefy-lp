@@ -1,3 +1,4 @@
+import { Features } from './_components/Features'
 import { Header } from './_components/Header'
 import { Hero } from './_components/Hero'
 
@@ -8,6 +9,7 @@ export default function LandingPage() {
 
       <main className="max-w-[1120px] mx-auto">
         <Hero />
+        <Features />
       </main>
     </div>
   )
