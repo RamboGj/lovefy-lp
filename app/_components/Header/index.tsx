@@ -44,12 +44,18 @@ export function Header() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any, href: string) => {
     e.preventDefault()
-    window.location.hash = href.slice(1) // Remove the # from the href
+    const targetElement = document.querySelector(href) as HTMLElement
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
     setCurrentHash(href)
   }
 
   return (
-    <header className="max-w-[1440px] inset-x-0 mx-auto fixed py-8 px-16 bg-neutral100 flex items-center justify-between">
+    <header className="max-w-[1440px] inset-x-0 mx-auto fixed py-8 px-16 bg-neutral100 flex items-center justify-between z-20">
       <LogoLong />
 
       <nav className="flex">

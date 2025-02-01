@@ -45,8 +45,8 @@ export function Features() {
 
   return (
     <section
-      id="hero"
-      className="pb-10 pt-[176px] flex flex-col gap-y-10 w-full items-center"
+      id="features"
+      className="py-10 flex flex-col gap-y-10 w-full items-center"
     >
       <div className="flex flex-col gap-y-2 items-center">
         <Pill content="What we offer" />
