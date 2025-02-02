@@ -37,7 +37,7 @@ export function Header() {
     },
     {
       label: 'Contact',
-      href: '#contact',
+      href: '#footer',
     },
   ]
 
@@ -55,7 +55,7 @@ export function Header() {
   }
 
   return (
-    <header className="max-w-[1440px] inset-x-0 mx-auto fixed py-8 px-16 bg-neutral100 flex items-center justify-between z-30">
+    <header className="max-w-[1440px] inset-x-0 mx-auto fixed py-8 px-4 md:px-16 bg-neutral100 flex items-center justify-between z-30">
       <LogoLong />
 
       <nav className="hidden lg:flex">
@@ -85,7 +85,7 @@ export function Header() {
       </nav>
 
       <div className="flex items-center gap-x-6">
-        <Link href={'/sign-in'}>
+        <Link className="hidden md:block" href={'/sign-in'}>
           <strong className="font-SatoshiBold text-neutral600 leading-[150%] text-[1rem] tracking-[-0.32px] hover:text-neutral500 transition-colors duration-300 ">
             Log In
           </strong>

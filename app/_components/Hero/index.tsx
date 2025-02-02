@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="product"
-      className="pb-10 pt-[176px] flex flex-col gap-y-10 w-full items-center"
+      className="pb-10 pt-[176px] flex flex-col gap-y-10 w-full items-center px-4 md:px-0"
     >
       <div className="flex flex-col gap-y-2 items-center">
         <Pill content="Howdy, we are lovefy" />

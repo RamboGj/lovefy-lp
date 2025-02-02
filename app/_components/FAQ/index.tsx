@@ -46,7 +46,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="py-10 flex flex-col gap-y-10 w-full items-center"
+      className="py-10 flex flex-col gap-y-10 w-full items-center px-4 lg:px-0"
     >
       <div className="flex flex-col gap-y-2 items-center">
         <Pill content="doubts or concerns? we're here to help!" />
@@ -74,8 +74,8 @@ export function FAQ() {
                 className="py-6 w-full border-b border-alphaBlack08 group"
                 value={question}
               >
-                <Accordion.Trigger className="w-full flex items-center justify-between">
-                  <strong className="flex flex-1 font-SatoshiBold text-brand500 text-[1rem] leading-[150%] tracking-[-0.32px]">
+                <Accordion.Trigger className="w-full flex items-center justify-between gap-x-2">
+                  <strong className="flex flex-1 text-left font-SatoshiBold text-brand500 text-[1rem] leading-[150%] tracking-[-0.32px]">
                     {question}
                   </strong>
 

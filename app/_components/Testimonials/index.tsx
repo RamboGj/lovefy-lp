@@ -28,7 +28,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-10 flex flex-col gap-y-10 w-full items-center"
+      className="py-10 flex flex-col gap-y-10 w-full items-center px-4 lg:px-0"
     >
       <div className="flex flex-col gap-y-2 items-center">
         <Pill content="wall of love" />

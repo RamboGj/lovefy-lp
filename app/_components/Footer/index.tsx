@@ -122,7 +122,7 @@ export function Footer() {
       id="footer"
       className="max-w-[1344px] mx-auto rounded-[40px_40px_0_0] border border-alphaBlack08"
     >
-      <div className="p-[72px] flex justify-between">
+      <div className="p-8 lg:p-[72px] flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 justify-between">
         <div className="max-w-[197px] flex flex-col justify-start items-start gap-y-6">
           <LogoMd />
 
@@ -145,10 +145,10 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="grid grid-cols-4 gap-x-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {sections.map(({ links, title }) => {
             return (
-              <div key={title} className="w-[195px] flex flex-col">
+              <div key={title} className="lg:w-[195px] flex flex-col">
                 <strong className="text-neutral500 font-Satoshi leading-[150%] text-[1rem] tracking-[-0.32px]">
                   {title}
                 </strong>

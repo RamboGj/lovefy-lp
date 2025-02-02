@@ -111,7 +111,7 @@ export function Plans() {
   return (
     <section
       id="pricing"
-      className="py-10 flex flex-col gap-y-10 w-full items-center"
+      className="py-10 flex flex-col gap-y-10 w-full items-center px-4 lg:px-0"
     >
       <div className="flex flex-col gap-y-2 items-center">
         <Pill content="Pricing" />
@@ -126,7 +126,7 @@ export function Plans() {
         </p>
       </div>
 
-      <div className="w-full grid grid-cols-3 gap-x-8">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
         {plans.map(
           ({ bestChoice, cta, features, price, priceLabel, title }) => {
             return (

@@ -20,7 +20,7 @@ export function Achievements() {
   return (
     <section
       id="achievements"
-      className="py-10 flex gap-x-[45px] justify-center"
+      className="py-10 flex flex-col lg:flex-row gap-[45px] items-center justify-center"
     >
       {achievements.map(({ label, title }) => {
         return (

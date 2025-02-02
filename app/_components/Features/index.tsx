@@ -46,7 +46,7 @@ export function Features() {
   return (
     <section
       id="features"
-      className="py-10 flex flex-col gap-y-10 w-full items-center"
+      className="py-10 flex flex-col gap-y-10 w-full items-center px-4 lg:px-0"
     >
       <div className="flex flex-col gap-y-2 items-center">
         <Pill content="What we offer" />
@@ -62,7 +62,7 @@ export function Features() {
         </p>
       </div>
 
-      <div className="grid grid-cols-[448px,1fr,1fr] grid-rows-[360px,360px] gap-8">
+      <div className="grid grid-cols-1 grid-rows-1 lg:grid-cols-[448px,1fr,1fr] lg:grid-rows-[360px,360px] gap-8">
         {features.map(({ className, description, icon, title }) => {
           return (
             <div
@@ -71,7 +71,7 @@ export function Features() {
             >
               {icon}
 
-              <div className="mt-auto flex flex-col gap-y-2">
+              <div className="mt-8 lg:mt-auto flex flex-col gap-y-2">
                 <h3 className="text-feedbackNeutral500 text-[1.5rem] font-SatoshiBold leading-[133.33%] tracking-[-0.48px]">
                   {title}
                 </h3>
